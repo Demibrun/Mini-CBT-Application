@@ -1,0 +1,56 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CBT Application</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="favicon-32x32.png">
+  </head>
+  <body>
+      <div class="quiz-container">
+          <div id="quiz">
+              <div class="question active" data-correct="b">
+                  <h3>Question 1: What is the capital of France?</h3>
+                  <label><input type="radio" name="q1" value="a"> a) London</label>
+                  <label><input type="radio" name="q1" value="b"> b) Paris</label>
+                  <label><input type="radio" name="q1" value="c"> c) Berlin</label>
+              </div>
+
+              <div class="question" data-correct="a">
+                  <h3>Question 2: Which planet is known as the Red Planet?</h3>
+                  <label><input type="radio" name="q2" value="a"> a) Mars</label>
+                  <label><input type="radio" name="q2" value="b"> b) Venus</label>
+                  <label><input type="radio" name="q2" value="c"> c) Jupiter</label>
+              </div>
+
+              <div class="question" data-correct="c">
+                  <h3>Question 3: What is the largest mammal in the world?</h3>
+                  <label><input type="radio" name="q3" value="a"> a) Elephant</label>
+                  <label><input type="radio" name="q3" value="b"> b) Giraffe</label>
+                  <label><input type="radio" name="q3" value="c"> c) Blue Whale</label>
+              </div>
+
+              <div class="question" data-correct="b">
+                  <h3>Question 4: Who painted the Mona Lisa?</h3>
+                  <label><input type="radio" name="q4" value="a"> a) Vincent van Gogh</label>
+                  <label><input type="radio" name="q4" value="b"> b) Leonardo da Vinci</label>
+                  <label><input type="radio" name="q4" value="c"> c) Pablo Picasso</label>
+              </div>
+
+              <div class="question" data-correct="a">
+                  <h3>Question 5: What is the chemical symbol for gold?</h3>
+                  <label><input type="radio" name="q5" value="a"> a) Au</label>
+                  <label><input type="radio" name="q5" value="b"> b) Ag</label>
+                  <label><input type="radio" name="q5" value="c"> c) Fe</label>
+              </div>
+          </div>
+
+          <button id="prev" onclick="showPrevQuestion()">Previous</button>
+          <button id="next" onclick="showNextQuestion()">Next</button>
+          <button id="submit" onclick="submitQuiz()" style="display: none;">Submit</button>
+          <div id="result"></div>
+      </div>
+      <script src="script.js"></script>
+  </body>
+  </html>
